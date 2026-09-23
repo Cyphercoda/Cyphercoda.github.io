@@ -107,6 +107,25 @@ h2 { margin-bottom: 0; font: 600 clamp(2.7rem, 5.3vw, 5.8rem)/.98 var(--display)
 .project-wide { min-height: 270px; grid-column: 1 / -1; background: var(--ink); color: #fff; }.project-wide p { color: var(--muted); }.project-wide-content { height: 100%; display: grid; grid-template-columns: 1.4fr 1fr auto; gap: 3rem; align-items: end; }.project-wide .tag-list { align-self: center; }
 .circle-link { width: 70px; height: 70px; display: grid; place-items: center; border-radius: 50%; background: var(--signal); color: #fff; font-size: 1.5rem; transition: transform .25s ease; }.circle-link:hover { transform: rotate(12deg) scale(1.06); }
 
+
+/* Field notes: a compact reference shelf inside the portfolio. */
+.cheatsheets { border-top: 1px solid var(--line); }
+.cheatsheets .section-heading > p { color: var(--muted); }
+.cheatsheet-card { display: block; padding: clamp(1.25rem, 3vw, 2.5rem); border: 1px solid rgba(103,232,249,.36); background: linear-gradient(135deg, rgba(79,124,255,.13), rgba(16,22,36,.94) 58%); transition: border-color .2s ease, transform .2s ease; }
+.cheatsheet-card:hover { border-color: var(--cyan); transform: translateY(-3px); }
+.cheatsheet-meta { display: flex; justify-content: space-between; gap: 1rem; color: var(--cyan); font: 500 .68rem var(--mono); letter-spacing: .08em; }
+.cheatsheet-content { display: flex; justify-content: space-between; align-items: flex-end; gap: 2rem; padding: 3rem 0 2rem; }
+.cheatsheet-content h3 { max-width: 780px; margin-bottom: 1rem; font: 600 clamp(2rem, 4vw, 4rem)/1.06 var(--display); letter-spacing: -.045em; }
+.cheatsheet-content p { max-width: 670px; color: var(--muted); margin-bottom: 0; }
+.cheatsheet-count { flex: none; color: var(--cyan); font: 600 clamp(3rem, 6vw, 6rem)/.85 var(--display); letter-spacing: -.06em; }
+.cheatsheet-count span { display: block; margin-top: .7rem; color: var(--muted); font: 500 .67rem var(--mono); letter-spacing: .08em; }
+.cheatsheet-open { display: flex; justify-content: space-between; border-top: 1px solid var(--line); padding-top: 1rem; font: 500 .79rem var(--mono); }
+@media (max-width: 680px) {
+  .cheatsheet-meta { flex-wrap: wrap; }
+  .cheatsheet-content { display: block; padding: 2rem 0; }
+  .cheatsheet-count { display: inline-block; margin-top: 2rem; }
+}
+
 .experience { border-bottom: 1px solid var(--line); }
 .timeline { margin-top: 4rem; border-top: 1px solid var(--line); }
 .timeline-row { display: grid; grid-template-columns: .7fr 1.25fr 1.6fr; gap: 2rem; padding: 2rem 0; border-bottom: 1px solid var(--line); align-items: start; transition: background .2s ease, padding .2s ease; }
