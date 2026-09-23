@@ -112,6 +112,7 @@ h2 { margin-bottom: 0; font: 600 clamp(2.7rem, 5.3vw, 5.8rem)/.98 var(--display)
 .cheatsheets { border-top: 1px solid var(--line); }
 .cheatsheets .section-heading > p { color: var(--muted); }
 .cheatsheet-card { display: block; padding: clamp(1.25rem, 3vw, 2.5rem); border: 1px solid rgba(103,232,249,.36); background: linear-gradient(135deg, rgba(79,124,255,.13), rgba(16,22,36,.94) 58%); transition: border-color .2s ease, transform .2s ease; }
+.cheatsheet-card + .cheatsheet-card { margin-top: 1rem; }
 .cheatsheet-card:hover { border-color: var(--cyan); transform: translateY(-3px); }
 .cheatsheet-meta { display: flex; justify-content: space-between; gap: 1rem; color: var(--cyan); font: 500 .68rem var(--mono); letter-spacing: .08em; }
 .cheatsheet-content { display: flex; justify-content: space-between; align-items: flex-end; gap: 2rem; padding: 3rem 0 2rem; }
